@@ -1,0 +1,89 @@
+# RedCraft infrastructure TODO
+
+[TOC]
+
+## Minecraft server
+
+### How to deploy servers
+- Python script that deploys a Scaleway instance with a preconfigured image and restores the last snapshot of the disk, ssh to the server and run the update script
+- Golang runner 
+
+### How to configure servers and plugins
+- GitHub repo with a `common` folder containing all config and a `plugins.json` file containing the list of plugins on S3, and the same for each server if necessary
+- GitHub Actions to create `.tar` files for each server containing a `plugins` directory with config and `plugins.json` containing a list of plugins to download from an endpoint
+- Update script that downloads the `.tar` archive for the current server and parses `plugins.json` and download the latest compatible versions
+
+### How to update server engine jar and plugins
+- Create an update center that will automatically download updates
+- Needs to be able to download from SpigotMC.org
+- Needs to be able to download from Jenkins
+- Needs to be able to download the last release from a GitHub project
+- Needs to be able to compile any .pom from a GitHub project
+- Needs to be able to download any file from any URL
+
+#### Handle breaking updates
+- TODO
+
+### How to handle planned restarts
+- Custom plugin (RedCraftReboot)
+    - `/reboot <minutes> <reason>`
+    - If minutes set to 0, start the countdown from 10 sec
+    - Max minutes should be 15
+    - Broadcast who asked for a reboot and why when ran except if console without args
+    - Args not needed for console, no broadcast and default to 15 min and "Scheduled daily reboot"
+    - Warn in the tchat 15 min, 10 min, 5 min, 4 min, 3 min, 2 min before reboot
+    - Start a countdown in the bossbar until reboot
+    - Do a countdown from 10 to 0 as title and end with "Reboot!"
+
+### How to handle roles and donation list
+- MySQL DB
+- Dispatch command to reload Lucky Perms on all servers
+
+### How to handle cross server tchat
+- Custom plugin (RedCraftChat)
+    - Discord bridge using webhooks - show player head and name in the webhook
+    - At first join, ask the user in the tchat which langages they speak, they will not be able to post in the tchat before they click which langages they use, can be done in a fake chest using banners for flags
+    - Assume the user speaks their country IP language (main one) + their MC language version if we can get it
+    - Translate messages comming back from the server directly on Bungee (do prefix detection for tchat)
+    - Spell check for messages (re use parts of KingChat)
+
+### How to handle multilang translations for plugins
+- Put it in Deepl and pray? :warning: Might not be the best idea
+
+### How to handle plugin saved data
+- Avoid plugins with saved data in the config dir
+
+### How to handle backups
+
+#### Worlds
+- Snapshot disk, restore it on a temporary instance with some CPU horsepower, use `lbzip2` and upload to S3
+- Add S3 rules to delete old backups
+
+#### Inventories
+- Do a simple .tar.gz directly on the server every 10 minutes
+
+#### Plugin data
+- Avoid plugins with saved data in the config dir
+
+
+## Discord server
+
+### How to set roles
+- Type a command in game to get a link to connect to Discord
+
+### How to handle multilang
+- Bot with reactions with flags to give you a role with your lang, giving you access to some channels in your language
+- NB: reactions can also be used for each server (creative, redstone, survival, factions, etc...)
+- For the Minecraft bridge (RedCraftChat), use Deepl to do realtime translation to a #minecraft-fr channel and #minecraft-en channel for example
+
+## Language support
+
+### When to add support for a language?
+- The language selector bot will have reactions for most common languages
+- We can map users that want a language with the Minecraft server and check how many active players speak that language
+- If there's at least one player speaking a language, we'll translate to that player ingame, but not on Discord
+- If there are at least 10 active players speaking a language, a new channel for live tchat will be created automatically on Discord and users will be notified of the creation of the channel from the bot via PM
+- If the user adds a reaction when the channel doesn't exist, they will get a PM to explain them that there's not enough users to justify the cost of translation
+- VIP counts as two active players
+- KingVIP counts as three active players
+- If the count goes bellow 5 active players speaking a language, the channel will be deleted and the active users will be notified via PM
