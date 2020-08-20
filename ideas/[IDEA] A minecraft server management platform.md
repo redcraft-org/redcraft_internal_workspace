@@ -1,4 +1,4 @@
-# [Idea] A minecraft server management platform
+# [IDEA] A minecraft server management platform
 
 [![hackmd-github-sync-badge](https://hackmd.io/ZNPzJax3T02Rs83mmz6pbA/badge)](https://hackmd.io/ZNPzJax3T02Rs83mmz6pbA)
 
