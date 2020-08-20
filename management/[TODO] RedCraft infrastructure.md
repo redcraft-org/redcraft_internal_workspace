@@ -1,4 +1,4 @@
-# RedCraft infrastructure TODO
+# [TODO] RedCraft infrastructure
 
 [![hackmd-github-sync-badge](https://hackmd.io/l0_aF4dGTy2VXcL0P9RBag/badge)](https://hackmd.io/l0_aF4dGTy2VXcL0P9RBag)
 
