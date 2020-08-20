@@ -1,4 +1,4 @@
-# RedCraft legacy note [FR]
+# [LEGACY] RedCraft legacy note FR
 
 [![hackmd-github-sync-badge](https://hackmd.io/z_Q12JA2Sni3Asf9ZFqcvQ/badge)](https://hackmd.io/z_Q12JA2Sni3Asf9ZFqcvQ)
 
