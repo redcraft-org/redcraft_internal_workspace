@@ -1,5 +1,8 @@
 # [Idea] A minecraft server management platform
 
+[![hackmd-github-sync-badge](https://hackmd.io/ZNPzJax3T02Rs83mmz6pbA/badge)](https://hackmd.io/ZNPzJax3T02Rs83mmz6pbA)
+
+
 This is just a back of the envelope idea for a fully featured platform
 It will probably never see the light of the day but I just wanted to archive this somewhere
 
