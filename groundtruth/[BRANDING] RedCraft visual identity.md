@@ -1,5 +1,8 @@
 # RedCraft Visual Identity
 
+[![hackmd-github-sync-badge](https://hackmd.io/EzG_rd8eROeJaxVHiLmx1w/badge)](https://hackmd.io/EzG_rd8eROeJaxVHiLmx1w)
+
+
 ## Description
 
 This document lists the different visual files (images and videos/animations) that make up the visual identity of RedCraft.org.
