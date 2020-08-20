@@ -1,4 +1,4 @@
-# RedCraft Visual Identity
+# [BRANDING] RedCraft visual identity
 
 [![hackmd-github-sync-badge](https://hackmd.io/EzG_rd8eROeJaxVHiLmx1w/badge)](https://hackmd.io/EzG_rd8eROeJaxVHiLmx1w)
 
