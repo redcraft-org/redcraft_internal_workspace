@@ -1,5 +1,8 @@
 # [ARCHITECTURE] Website structure
 
+[![hackmd-github-sync-badge](https://hackmd.io/0dh9taMIQeidOYiwYMYEvg/badge)](https://hackmd.io/0dh9taMIQeidOYiwYMYEvg)
+
+
 
 ## API
 
