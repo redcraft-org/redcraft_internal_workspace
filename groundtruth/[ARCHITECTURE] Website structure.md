@@ -51,8 +51,11 @@ List of all sites where you can vote for the server
 - Server statistics
 - Player statistics
 - Dynmap
-### Rules
+### Rules & References
 Minecraft and Discord Server Rules Overview
+References used for creating the website (& server ?)
+- [Fontawesome license](https://fontawesome.com/license)
+
 ### Articles
 Page regrouping all the articles of the server
 --> Reference : https://www.codeply.com/go/u7fEDdUbXg/bootstrap-article-list
