@@ -17,11 +17,10 @@ methode: GET
 url: https://redcraft.org/api/v1/url
 description: set list url
 methode: POST
-request: {
-    token: <str:your_token>,
-    shortened: <str:your_token>|Null,
-    url: <str:url>
-}
+params post:
+  - token: str, token to provider
+  - shortened: str|null, choise shortened if null, hash is generate to shortene, 
+  - url: str: url to redirect
 ```
 
 ```
@@ -33,9 +32,40 @@ methode: GET
 
 
 ### Skin V1
-    GET: https://redcraft.org/api/v1/skin/template/<str:ref>
-    GET: https://redcraft.org/api/v1/head/template/<str:ref>
-    GET: https://redcraft.org/api/v1/body/template/<str:ref>
+```
+url: https://redcraft.org/api/v1/skin/template/<str:ref>
+params url:
+  - ref: uuid or username to player
+
+description: get template to player
+methode: GET
+params get:
+  - size: int, size to img skin
+```
+
+```
+url: https://redcraft.org/api/v1/skin/head/<str:ref>
+params url: {
+    ref: uuid or username to player
+}
+description: get head to player
+methode: GET
+params:
+  - size: int, size to img skin
+  - outer: bool, if print outer in skin
+```
+
+```
+url: https://redcraft.org/api/v1/skin/body/<str:ref>
+params url: {
+    ref: uuid or username to player
+}
+description: get full skin face to player
+methode get: GET
+params:
+  - size: int, size width to img skin
+  - outer: bool, if print outer in skin
+```
 
 ## Pages
 
