@@ -6,8 +6,9 @@
 
 ## Website
 - Translations
-- Admin Dashboard
+- Admin Dashboard 
 - Donations
+- Contact
 
 
 ## Discord
