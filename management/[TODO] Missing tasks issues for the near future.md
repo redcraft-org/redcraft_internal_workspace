@@ -6,9 +6,12 @@
 
 ## Website
 - Translations
-- Admin Dashboard 
+- Admin Dashboard
 - Donations
 - Contact
+- Per player stats
+- Global stats
+- Top ranking
 
 
 ## Discord
