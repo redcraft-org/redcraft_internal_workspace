@@ -95,6 +95,31 @@
 - Served by apache or nginx
 
 
+### How to give perks to good players
+
+Use medals!
+
+Medals can be either given by mods for skills (redstoner, engineer, builder, architect) or for playtime (suviver, veteran) and can give permissions.
+
+Any new player would be a newbie, and having at least one medal would make you a member
+
+- Newbie
+    - Member
+        - Redstoner
+            - Engineer
+        - Builder
+            - Architect
+        - Surviver
+            - Veteran
+    - VIP
+        - KingVIP/RedVIP
+
+    - Staff
+        - Helper
+            - Modo
+                - Admin
+                    - Founder
+
 ## Discord server
 
 ### How to set roles
