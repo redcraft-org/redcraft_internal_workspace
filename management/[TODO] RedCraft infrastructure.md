@@ -122,8 +122,28 @@ Any new player would be a newbie, and having at least one medal would make you a
 
 ## Discord server
 
+### What to sync
+- Roles
+- Username
+- UUID on note for some sort of quick match
+
 ### How to set roles
 - Type a command in game to get a link to connect to Discord
+- Generate a channel on a different Discord server
+- Give an invite to the player in the tchat
+- Wait for the user to log in
+- When the user joins the channel, get info and kick the user from the temp server
+- If the Discord account ID can't be found on the main server, send an invite to the user
+- Otherwise, trigger sync
+
+### Sync triggers
+- New language selected
+- Primary language changed
+- Account joined Discord
+- Account joined Minecraft
+- Command in game
+- Permission event in game
+- Cron task
 
 ### How to handle multilang
 - Bot with reactions with flags to give you a role with your lang, giving you access to some channels in your language
