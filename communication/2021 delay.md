@@ -23,7 +23,7 @@ Les projets suivants avancent à leur rythme et seront terminés en 2021 :
 
 Pour rappel, tous ces projets sont disponibles sur GitHub à l'adresse suivante : https://github.com/redcraft-org
 
-Il reste encore beaucoup de travail, mais nous faisons tout pour concevoir un serveur de qualité et nous passons du temps à faire de l'inginérie afin de faire un serveur qui sera maintenable sur la durée.
+Il reste encore beaucoup de travail, mais nous faisons tout pour concevoir un serveur de qualité et nous passons du temps à faire de l'ingénierie afin de faire un serveur qui sera maintenable sur la durée.
 
 Merci de nous faire confiance et on se donne rendez-vous en 2021 !
 
