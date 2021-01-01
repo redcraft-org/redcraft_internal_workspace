@@ -4,7 +4,7 @@
 
 Bonne année 2021 à tous, et qu'elle soit meilleure que 2020 ! 
 
-Nous savons que l'ouverture de RedCraft.org était prévue pour 2020, mais malheureusement, nous n'avons pas vraiment eu le temps de travailler suffisament pour rejoindre notre objectif d'une ouverture avant la fin de l'année.
+Nous savons que l'ouverture de RedCraft.org était prévue pour 2020, mais malheureusement, nous n'avons pas vraiment eu le temps de travailler suffisamment pour rejoindre notre objectif d'une ouverture avant la fin de l'année.
 
 Cependant, nous travaillons toujours sur le serveur. En effet, en 2020, nous avons déjà conçu de nombreux projets qui serviront pour RedCraft une fois ouvert :
 - Plugin d'anti lag lorsqu'un joueur génère du terrain (AntiGenerationLag)
@@ -29,13 +29,12 @@ Merci de nous faire confiance et on se donne rendez-vous en 2021 !
 
 :gb:
 
-
 Happy New Year 2021 to everyone, and may it be better than 2020! 
 
 We know that the opening of RedCraft.org was scheduled for 2020, but unfortunately, we didn't really have enough time to work to reach our goal of an opening before the end of the year.
 
 However, we are still working on the server. Indeed, in 2020, we have already designed and completed many projects that will be used for RedCraft once opened:
-- Plugin of anti lag when a player generates terrain (AntiGenerationLag)
+- Plugin of anti-lag when a player generates terrain (AntiGenerationLag)
 - Plugin to list servers and players on the website (RedCraftBungeeJsonApi)
 - Discord's built-in chat plugin with real-time translation (RedCraftChat)
 - Minecraft server management software for Linux (redcraft_server_manager)
@@ -47,7 +46,7 @@ The following projects are still in progress and will be completed in 2021:
 - Website (redcraft_website)
 - Minecraft server configuration and template generation (redcraft_server_template)
 - Plugin to protect chests and containers (RedCraftProtect)
-- Medal system for "achivements" (RedCraftMedals)
+- Medal system for "achievements" (RedCraftMedals)
 
 As a reminder, all these projects are available on GitHub at the following address: https://github.com/redcraft-org.
 
